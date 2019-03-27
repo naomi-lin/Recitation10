@@ -13,7 +13,7 @@ public class MoneyDoorPlugin implements GamePlugin {
     private int TEN = 10;
 
     // The game framework
-    private GameFramework framework = null;
+    private GameFramework framework;
 
     // The amount of money each player has
     public HashMap<String, Integer> PlayerScores = new HashMap<String, Integer>();
