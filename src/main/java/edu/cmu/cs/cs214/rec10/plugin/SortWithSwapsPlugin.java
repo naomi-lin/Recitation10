@@ -6,8 +6,8 @@ import edu.cmu.cs.cs214.rec10.framework.core.GamePlugin;
 import java.util.Random;
 
 public class SortWithSwapsPlugin implements GamePlugin {
-    private int ONE = 1;
-    private int TEN = 10;
+    private static final int ONE = 1;
+    private static final int TEN = 10;
 
     // Describes whether the current move is over
     public Boolean move = false;
@@ -22,7 +22,7 @@ public class SortWithSwapsPlugin implements GamePlugin {
     private int last = -1;
 
     //The number of swaps the user has made
-    static Integer count = null;
+    private static Integer count = null;
 
     public String getGameName() {
         return new String("sort with swaps plugin");
